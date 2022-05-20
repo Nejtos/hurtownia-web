@@ -1,0 +1,11 @@
+label[type=LeftText]{
+    width: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+label[type=RightText]{
+    width: auto;
+    margin-top: 20px;
+    margin-left: 1200px;
+}

@@ -1,0 +1,34 @@
+.ResetButton{
+    margin: 0;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.ExteriorResetButtonBox{
+    display: flex;
+    height: 28px;
+    width: 265px;
+    border-radius: 12px;
+    background-color: #969393;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+    margin-bottom: 65px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+.ResetButtonBox{
+    display: inline-flex;
+    height: 59px;
+    width: 240px;
+    align-items: center;
+    text-align: center;
+    padding-left: 9px;
+    padding-right: 9px;
+}

@@ -1,0 +1,117 @@
+.RowCategoryButtons{
+    display: inline-flex;
+    width: auto;
+    height: 50px;
+    gap: 50px;
+    margin-top: 210px;
+    margin-left: 355px;
+}
+
+.CategoryPanelWrapper {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 550px;
+    width: 450px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+    margin-top: 20px;
+    margin-left: 355px;
+}
+
+.CategoryHeaderWrapper {
+    background-color: rgba(80, 110, 223, 0.1);
+    width: 440px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    display: inline-flex;
+}
+
+.CategoryID{
+    margin-left: 75px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 125px;
+    gap: 250px;
+}
+
+.CategoryName{
+    margin-left: 110px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 100px;
+}
+
+.ElementPanelWrapper {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow-y: scroll;
+    position: absolute;
+    height: 550px;
+    width: 450px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+    margin-top: 20px;
+    margin-left: 1015px;
+}
+
+.ElementID{
+    margin-left: 75px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 125px;
+    gap: 250px;
+}
+
+.ElementName{
+    margin-left: 110px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 100px;
+}
+
+.ElementHeaderWrapper {
+    background-color: rgba(80, 110, 223, 0.1);
+    width: 440px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    display: inline-flex;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

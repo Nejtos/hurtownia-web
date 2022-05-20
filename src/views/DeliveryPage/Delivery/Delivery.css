@@ -1,0 +1,51 @@
+.DeliveryWrapper {
+    height: 54.55px;
+    width: 1098px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E4E7EF;
+}
+
+.ID {
+    margin-left: 65px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Date {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 75px;
+    max-width: 150px;
+}
+
+
+.Details {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 120px;
+    max-width: 150px;
+}
+
+.Status {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 210px;
+    max-width: 50px;
+}

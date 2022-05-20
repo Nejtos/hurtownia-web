@@ -1,0 +1,12 @@
+.RowBox{
+    display: inline-flex;
+    width: auto;
+    height: 50px;
+    gap: 10px;
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
