@@ -7,8 +7,8 @@
     border: 1px solid #E4E7EF;
 }
 
-.ID {
-    margin-left: 65px;
+.DeliveryID {
+    margin-left: 100px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -19,33 +19,33 @@
     text-overflow: ellipsis;
 }
 
-.Date {
+.DeliveryDate {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 75px;
+    margin-left: 85px;
     max-width: 150px;
 }
 
 
-.Details {
+.DeliveryDetails {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 120px;
+    margin-left: 115px;
     max-width: 150px;
 }
 
-.Status {
+.DeliveryStatus {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 210px;
+    margin-left: 165px;
     max-width: 50px;
 }

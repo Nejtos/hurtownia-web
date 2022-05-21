@@ -5,8 +5,8 @@ import StoragePage from "./views/StoragePage/StoragePage";
 import RaportsPage from "./views/RaportsPage/RaportsPage";
 import ProductsPage from "./views/ProductsPage/ProductsPage";
 import OrdersPage from "./views/OrdersPage/OrdersPage";
-import EmployeePage from "./views/EmployeePage/EmployeePage";
-import DeliveryPage from "./views/DeliveryPage/DeliveryPage";
+import EmployeesPage from "./views/EmployeesPage/EmployeesPage";
+import DeliveriesPage from "./views/DeliveriesPage/DeliveriesPage";
 import AccountsPage from "./views/AccountsPage/AccountsPage";
 import axiosInstance from "./services/axiosInstance";
 
@@ -50,10 +50,10 @@ function App() {
                     <Route path="/home" element={<HomePage />} />
                     <Route path="/magazyn" element={<StoragePage />} />
                     <Route path="/produkty" element={<ProductsPage />} />
-                    <Route path="/dostawy" element={<DeliveryPage/>} />
+                    <Route path="/dostawy" element={<DeliveriesPage />} />
                     <Route path="/zamowienia" element={<OrdersPage />} />
                     <Route path="/raporty" element={<RaportsPage />} />
-                    <Route path="/pracownicy" element={<EmployeePage />} />
+                    <Route path="/pracownicy" element={<EmployeesPage />} />
                     <Route path="/konta" element={<AccountsPage />} />
                 </Routes>
             </BrowserRouter>

@@ -1,0 +1,41 @@
+.EmployeeWrapper {
+    height: 54.55px;
+    width: 1098px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E4E7EF;
+}
+
+.EmployeeName {
+    margin-left: 130px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.EmployeePosition {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 220px;
+    max-width: 150px;
+}
+
+
+.EmployeeTelNum {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 205px;
+    max-width: 150px;
+}

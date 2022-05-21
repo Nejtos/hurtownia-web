@@ -21,9 +21,9 @@ const refreshToken = async () =>
 		})
 		.catch((error) =>
 		{	
-			// if(window.location.pathname !== "/login" && window.location.pathname !== "/"  ){
-			// 	window.location.href = "/login";
-			// }
+			if(window.location.pathname !== "/login" && window.location.pathname !== "/"  ){
+				window.location.href = "/login";
+			}
 			console.log(error.response.data);
 		});
 };

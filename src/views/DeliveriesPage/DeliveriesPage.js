@@ -1,19 +1,19 @@
-import "./DeliveryPage.css"
+import "./DeliveriesPage.css"
 import Title from "../../components/Title/Title";
 import Navigation from "../../components/NavigationBar/Navigation";
-import DeliveryPanel from "./DeliveryPanel/DeliveryPanel";
+import DeliveriesPanel from "./DeliveriesPanel/DeliveriesPanel";
 import Button from "../../components/Button/AnotherButton";
 
 import axios from "axios";
 import { baseApiUrl } from "../../services/routes";
 import { useState, useEffect } from "react";
 
-const DeliveryPage= () =>
+const DeliveriesPage= () =>
 {
     const [deliveries, setDeliveries] = useState([])
     useEffect(() =>
     {
-        axios.get(`${baseApiUrl}/dostawy`).then((response) =>
+        axios.get(`${baseApiUrl}/deliveries`).then((response) =>
         {
             setDeliveries(response.data);
         });
@@ -23,12 +23,12 @@ const DeliveryPage= () =>
         <div>
             <Title />
             <Navigation />
-            <div className="DeliveryStatusButton">
+            <div className="DeliveriesStatusButton">
                 <Button buttonContent="Potwierdz przyjęcie dostawy" />
             </div>
-            <DeliveryPanel deliveries={deliveries}/>
+            <DeliveriesPanel deliveries={deliveries}/>
         </div>
     );
 }
 
-export default DeliveryPage;
+export default DeliveriesPage;
