@@ -1,11 +1,10 @@
 import Product from "../Product/Product";
 import "./StoragePanel.css"
-// import User from "../User/User";
 
 const StoragePanel = () => {
     return (
-        <div className="UsersPanelWrapper">
-            <div className="HeaderWrapper">
+        <div className="StoragePanelWrapper">
+            <div className="StorageHeaderWrapper">
                 <div className="StorageID">ID produktu</div>
                 <div className="StoragePlace">ID miejsca</div>
                 <div className="StorageWeight">Ilość [kg]</div>

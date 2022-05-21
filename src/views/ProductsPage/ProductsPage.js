@@ -3,8 +3,11 @@ import Title from "../../components/Title/Title";
 import Navigation from "../../components/NavigationBar/Navigation";
 // import Button from "../../components/Button/AnotherButton";
 import ProductsTable from "./ProductsTable/ProductsTable";
-import CategoryTable from "./CategoryTable/CategoryTable";
-import { useState } from "react";
+import CategoriesTable from "./CategoriesTable/CategoriesTable";
+
+import axios from "axios";
+import { baseApiUrl } from "../../services/routes";
+import { useState, useEffect } from "react";
 
 const ProductsPage= () =>
 {
@@ -12,6 +15,19 @@ const ProductsPage= () =>
     const [showCategory, setShowCategory] = useState(false)
     const ProductsClick = () => {setShowProducts(true); setShowCategory(false)}
     const CategoryClick = () => {setShowCategory(true); setShowProducts(false)}
+
+    const [products, setProducts] = useState([])
+    useEffect(() =>
+    {
+        axios.get(`${baseApiUrl}/products`, { headers: {
+            accessToken: localStorage.getItem("accessToken"),
+            refreshToken: localStorage.getItem("refreshToken"),
+        },}).then((response) =>
+        {
+            setProducts(response.data); 
+        });
+    },[])
+
     return (
         <div>
             <Title />
@@ -22,8 +38,8 @@ const ProductsPage= () =>
                 <button className="ProductsButton" onClick={ProductsClick}> Zarządzaj produktami </button>
                 <button className="ProductsButton" onClick={CategoryClick}> Zarządzaj kategoriami </button>
             </div>
-            {showProducts ? <ProductsTable /> : null }
-            {showCategory ? <CategoryTable /> : null }
+            {showProducts ? <ProductsTable products={products} /> : null }
+            {showCategory ? <CategoriesTable /> : null }
         </div>
     );
 }

@@ -3,10 +3,10 @@ import "./Product.css"
 const Product = ({ productID, placeID, weight }) =>
 {
     return (
-        <div className="ProductWrapper">
-            <span className="ProductID">{productID}</span>
-            <span className="PlaceID">{placeID}</span>
-            <span className="ProductWeight">{weight}</span>
+        <div className="StorageProductWrapper">
+            <span className="StorageProductID">{productID}</span>
+            <span className="StoragePlaceID">{placeID}</span>
+            <span className="StorageProductWeight">{weight}</span>
         </div>
     );
 }

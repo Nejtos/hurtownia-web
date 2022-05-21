@@ -1,8 +1,8 @@
 import "./ProductsTable.css"
-// import User from "../User/User";
 import Button from "../../../components/Button/AnotherButton";
+import Product from "../Product/Product";
 
-const ProductsTable = () => {
+const ProductsTable = ({products}) => {
     return (
         <div>
             <div className="RowProductsButtons">
@@ -20,10 +20,9 @@ const ProductsTable = () => {
                     <div className="ProductsDate">Data ważności</div>
                     <div className="ProductsWeight">Ilość [kg]</div>
                 </div>
-                {/* {users.map((user, key) =>
-            {
-                return <User key={key} name={(user.email).substring(0, (user.email).indexOf('@'))} role={user.role} capacity={162} used={42} />
-            })} */}
+                {products.map((product, key) => {
+                    return <Product key={key} productID={product.id_produktu} productCategory={"Wieprzowina"} productElement={"Karczek"} productProducent={"Rzeźnia u dabka"} productNumber={product.nr_partii} productDate={product.data_waznosci} productWeight={product.ilosc} />
+                })}
             </div>
         </div>
     );
