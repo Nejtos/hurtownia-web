@@ -1,19 +1,24 @@
 import "./OrdersPanel.css"
-// import User from "../User/User";
+import Order from "../Order/Order";
 
-const OrdersPanel = () => {
+const OrdersPanel = ({orders}) => {
     return (
         <div className="OrdersPanelWrapper">
             <div className="OrdersHeaderWrapper">
                 <div className="OrdersID">ID</div>
                 <div className="OrdersData">Data</div>
-                <div className="OrdersSzczegoly">Szczegóły</div>
-                <div className="Wydano">Wydano</div>
+                <div className="OrdersDetails">Szczegóły</div>
+                <div className="OrdersStatus">Wydano</div>
             </div>
-            {/* {users.map((user, key) =>
-            {
-                return <User key={key} name={(user.email).substring(0, (user.email).indexOf('@'))} role={user.role} capacity={162} used={42} />
-            })} */}
+            {orders.map((order, key) => {
+                if(order.status === true){
+                    order.status = "Tak"; 
+                }
+                if(order.status === false){
+                    order.status = "Nie"; 
+                }
+                return <Order key={key} orderID={order.id_zamowienia} orderDate={order.data} orderState={order.status} />
+            })}
         </div>
     );
 }

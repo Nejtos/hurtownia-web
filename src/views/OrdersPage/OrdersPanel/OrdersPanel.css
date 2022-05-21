@@ -15,7 +15,7 @@
 }
 
 .OrdersID{
-    margin-left: 90px;
+    margin-left: 130px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -28,7 +28,7 @@
 }
 
 .OrdersData{
-    margin-left: 25px;
+    margin-left: 35px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -39,8 +39,8 @@
     max-width: 100px;
 }
 
-.OrdersSzczegoly{
-    margin-left: 40px;
+.OrdersDetails{
+    margin-left: 30px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -51,8 +51,8 @@
     max-width: 100px;
 }
 
-.Wydano{
-    margin-left: 70px;
+.OrdersStatus{
+    margin-left: 20px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;

@@ -6,7 +6,7 @@ const Delivery = ({ deliveryID, deliveryDate, deliveryState }) =>
         <div className="DeliveryWrapper">
             <span className="DeliveryID">{deliveryID}</span>
             <span className="DeliveryDate">{deliveryDate}</span>
-            <span className="DeliveryDetails">Szczegoly</span>
+            <span className="DeliveryDetails">Szczegóły</span>
             <span className="DeliveryStatus">{deliveryState}</span>
         </div>
     );

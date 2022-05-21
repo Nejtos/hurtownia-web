@@ -6,7 +6,7 @@ const Raport = ({ raportID, raportDate }) =>
         <div className="RaportWrapper">
             <span className="RaportID">{raportID}</span>
             <span className="RaportDate">{raportDate}</span>
-            <span className="RaportDetails">Szczegoly</span>
+            <span className="RaportDetails">Szczegóły</span>
         </div>
     );
 }
