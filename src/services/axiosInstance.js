@@ -2,8 +2,6 @@ import { baseApiUrl } from "./routes";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
 
-
-
 const refreshToken = async () =>
 {
 	await axios

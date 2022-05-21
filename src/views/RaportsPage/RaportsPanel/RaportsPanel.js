@@ -1,7 +1,8 @@
 import "./RaportsPanel.css"
-// import User from "../User/User";
+import Raport from "../Raport/Raport";
 
-const RaportsPanel = () => {
+const RaportsPanel = ({raports}) => {
+
     return (
         <div className="RaportsPanelWrapper">
             <div className="RaportsHeaderWrapper">
@@ -9,10 +10,9 @@ const RaportsPanel = () => {
                 <div className="RaportsData">Data</div>
                 <div className="RaportsDetails">Szczegóły</div>
             </div>
-            {/* {users.map((user, key) =>
-            {
-                return <User key={key} name={(user.email).substring(0, (user.email).indexOf('@'))} role={user.role} capacity={162} used={42} />
-            })} */}
+            {raports.map((raport, key) => {
+                return <Raport key={key} raportID={raport.id_raportu} raportDate={raport.data} />
+            })}
         </div>
     );
 }
