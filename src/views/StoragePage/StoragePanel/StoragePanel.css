@@ -1,4 +1,4 @@
-.StoragePanelWrapper {
+.StoragePanelWrapper[type="default"] {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-y: scroll;
@@ -9,6 +9,22 @@
     margin: 0;
     position: absolute;
     top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.StoragePanelWrapper[type="selected"] {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow-y: scroll;
+    height: 650px;
+    width: 1110px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
+    margin: 0;
+    position: absolute;
+    top: 58%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);

@@ -1,16 +1,18 @@
 import "./ProductsPage.css"
 import Title from "../../components/Title/Title";
 import Navigation from "../../components/NavigationBar/Navigation";
-// import Button from "../../components/Button/AnotherButton";
 import ProductsTable from "./ProductsTable/ProductsTable";
 import CategoriesTable from "./CategoriesTable/CategoriesTable";
 
 import axios from "axios";
 import { baseApiUrl } from "../../services/routes";
 import { useState, useEffect } from "react";
+import { UserContext } from "../../contexts/UserContext";
+import { useContext } from 'react';
 
 const ProductsPage= () =>
 {
+    const { userState } = useContext(UserContext);
     const [showProducts, setShowProducts] = useState(false)
     const [showCategory, setShowCategory] = useState(false)
     const ProductsClick = () => {setShowProducts(true); setShowCategory(false) }
@@ -56,14 +58,15 @@ const ProductsPage= () =>
         <div>
             <Title />
             <Navigation />
-            <div className="RowButtons">
-                {/* <Button buttonContent="Zarządzaj produktami" />
-                <Button buttonContent="Zarządzaj kategoriami" /> */}
-                <button className="ProductsButton" onClick={ProductsClick}> Zarządzaj produktami </button>
-                <button className="ProductsButton" onClick={CategoryClick}> Zarządzaj kategoriami </button>
-            </div>
-            {showProducts ? <ProductsTable products={products} /> : null }
-            {showCategory ? <CategoriesTable categories={categories} elements={elements} /> : null }
+            {(userState.role === "magazynier" || userState.role === "kontroler jakosci") ? <ProductsTable products={products} />
+            :<div>
+                <div className="RowButtons">
+                    <button className="ProductsButton" onClick={ProductsClick}> Zarządzaj produktami </button>
+                    <button className="ProductsButton" onClick={CategoryClick}> Zarządzaj kategoriami </button>
+                </div>
+                {showProducts ? <ProductsTable products={products} /> : null }
+                {showCategory ? <CategoriesTable categories={categories} elements={elements} /> : null }
+            </div>}
         </div>
     );
 }

@@ -2,9 +2,9 @@
     display: inline-flex;
     width: auto;
     height: 50px;
-    gap: 50px;
+    gap: 60px;
     margin-top: 240px;
-    margin-left: 355px;
+    margin-left: 357px;
 }
 
 .CategoriesPanelWrapper {
@@ -65,7 +65,7 @@
     background-color: #FFFFFF;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
     margin-top: 20px;
-    margin-left: 1015px;
+    margin-left: 1042px;
 }
 
 .ElementsID{
