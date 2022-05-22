@@ -13,8 +13,8 @@ const ProductsPage= () =>
 {
     const [showProducts, setShowProducts] = useState(false)
     const [showCategory, setShowCategory] = useState(false)
-    const ProductsClick = () => {setShowProducts(true); setShowCategory(false)}
-    const CategoryClick = () => {setShowCategory(true); setShowProducts(false)}
+    const ProductsClick = () => {setShowProducts(true); setShowCategory(false) }
+    const CategoryClick = () => {setShowCategory(true); setShowProducts(false) }
 
     const [products, setProducts] = useState([])
     useEffect(() =>

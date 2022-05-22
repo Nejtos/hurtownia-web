@@ -1,5 +1,5 @@
 import "./Order.css"
-import StatusDropdown from "../StatusDropdown/StatusDropdown";
+import StatusDropdown from "../StatusDropdown.js/StatusDropdown";
 
 const Order = ({ orderID, orderDate, orderState }) =>
 {

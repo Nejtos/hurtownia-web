@@ -82,3 +82,33 @@
 .CreateCategoryLabel{
     display: inline-flex;
 }
+
+.AcceptExteriorButtonBox{
+    display: flex;
+    height: 35px;
+    width: 180px;
+    border-radius: 8px;
+    background-color: #969393;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+    margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-top: 80px;
+    margin-left: 820px;
+    position: absolute;
+}
+
+.AcceptButtonBox{
+    display: inline-flex;
+    height: 59px;
+    width: 240px;
+    align-items: center;
+    text-align: center;
+    padding-left: 9px;
+    padding-right: 9px;
+}
