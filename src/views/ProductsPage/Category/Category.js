@@ -1,12 +1,11 @@
 import "./Category.css"
 
-const Category = ({ CategoryID, CategoryDate }) =>
+const Category = ({ categoryID, categoryName }) =>
 {
     return (
         <div className="CategoryWrapper">
-            <span className="CategoryID">{CategoryID}</span>
-            <span className="CategoryDate">{CategoryDate}</span>
-            <span className="CategoryDetails">Szczegóły</span>
+            <span className="CategoryID">{categoryID}</span>
+            <span className="CategoryName">{categoryName}</span>
         </div>
     );
 }

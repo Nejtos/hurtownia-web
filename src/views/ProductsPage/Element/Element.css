@@ -1,4 +1,4 @@
-.CategoryWrapper {
+.ElementWrapper {
     height: 54.55px;
     width: 438px;
     display: flex;
@@ -7,26 +7,25 @@
     border: 1px solid #E4E7EF;
 }
 
-.CategoryID {
-    margin-left: 80px;
+.ElementID {
+    margin-left: 90px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
-    max-width: 100px;
+    max-width: 80px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     justify-content: center;
 }
 
-.CategoryName {
-    margin-left: 50px;
+.ElementName {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    display: flex;
-    max-width: 180px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-left: 120px;
+    max-width: 150px;
     justify-content: center;
 }

@@ -28,6 +28,30 @@ const ProductsPage= () =>
         });
     },[])
 
+    const [categories, setCategories] = useState([])
+    useEffect(() =>
+    {
+        axios.get(`${baseApiUrl}/categories`, { headers: {
+            accessToken: localStorage.getItem("accessToken"),
+            refreshToken: localStorage.getItem("refreshToken"),
+        },}).then((response) =>
+        {
+            setCategories(response.data); 
+        });
+    },[])
+
+    const [elements, setElements] = useState([])
+    useEffect(() =>
+    {
+        axios.get(`${baseApiUrl}/elements`, { headers: {
+            accessToken: localStorage.getItem("accessToken"),
+            refreshToken: localStorage.getItem("refreshToken"),
+        },}).then((response) =>
+        {
+            setElements(response.data); 
+        });
+    },[])
+
     return (
         <div>
             <Title />
@@ -39,7 +63,7 @@ const ProductsPage= () =>
                 <button className="ProductsButton" onClick={CategoryClick}> Zarządzaj kategoriami </button>
             </div>
             {showProducts ? <ProductsTable products={products} /> : null }
-            {showCategory ? <CategoriesTable /> : null }
+            {showCategory ? <CategoriesTable categories={categories} elements={elements} /> : null }
         </div>
     );
 }
