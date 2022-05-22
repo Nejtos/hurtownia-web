@@ -2,7 +2,7 @@ import "./DeliveriesPage.css"
 import Title from "../../components/Title/Title";
 import Navigation from "../../components/NavigationBar/Navigation";
 import DeliveriesPanel from "./DeliveriesPanel/DeliveriesPanel";
-import Button from "../../components/Button/AnotherButton";
+// import Button from "../../components/Button/AnotherButton";
 
 import axios from "axios";
 import { baseApiUrl } from "../../services/routes";
@@ -24,7 +24,12 @@ const DeliveriesPage= () =>
             <Title />
             <Navigation />
             <div className="DeliveriesStatusButton">
-                <Button buttonContent="Potwierdz przyjęcie dostawy" />
+                <button className="AnotherExteriorButtonBox">
+                    <div className="AnotherButtonBox" onClick={() => window.location.reload(false)}>
+                        <label> {"Potwierdz przyjęcie dostawy"} </label>
+                    </div>
+                </button>
+                {/* <Button buttonContent="Potwierdz przyjęcie dostawy" /> */}
             </div>
             <DeliveriesPanel deliveries={deliveries}/>
         </div>

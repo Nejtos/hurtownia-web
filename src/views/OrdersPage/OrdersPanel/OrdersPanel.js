@@ -11,12 +11,6 @@ const OrdersPanel = ({orders}) => {
                 <div className="OrdersStatus">Wydano</div>
             </div>
             {orders.map((order, key) => {
-                if(order.status === true){
-                    order.status = "Tak"; 
-                }
-                if(order.status === false){
-                    order.status = "Nie"; 
-                }
                 return <Order key={key} orderID={order.id_zamowienia} orderDate={order.data} orderState={order.status} />
             })}
         </div>

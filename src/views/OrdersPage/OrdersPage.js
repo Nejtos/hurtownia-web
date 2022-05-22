@@ -2,7 +2,7 @@ import "./OrdersPage.css"
 import Title from "../../components/Title/Title";
 import Navigation from "../../components/NavigationBar/Navigation";
 import OrdersPanel from "./OrdersPanel/OrdersPanel";
-import Button from "../../components/Button/AnotherButton";
+// import Button from "../../components/Button/AnotherButton";
 
 import axios from "axios";
 import { baseApiUrl } from "../../services/routes";
@@ -24,7 +24,12 @@ const OrdersPage= () =>
             <Title />
             <Navigation />
             <div className="OrdersStatusButton">
-                <Button buttonContent="Potwierdz wydanie zamówienia" />
+                {/* <Button buttonContent="Potwierdz wydanie zamówienia" /> */}
+                <button className="AnotherExteriorButtonBox">
+                    <div className="AnotherButtonBox" onClick={() => window.location.reload(false)}>
+                        <label> {"Potwierdz wydanie zamówienia"} </label>
+                    </div>
+                </button>
             </div>
             <OrdersPanel orders={orders} />
         </div>
