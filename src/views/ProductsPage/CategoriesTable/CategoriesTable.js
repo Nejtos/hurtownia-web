@@ -4,19 +4,21 @@ import Category from "../Category/Category";
 import Element from "../Element/Element";
 import CreateCategory from "../components/Create/CreateCategory";
 import CreateElement from "../components/Create/CreateElement";
+import EditElement from "../components/Edit/EditElement";
+import Delete from "../components/Delete/Delete";
 import { useState } from "react";
 
 
 const CategoriesTable = ({ categories, elements }) => {
 
     const [createNewCategory, setcreateNewCategory] = useState(false)
-    const createCategoryClick = () => { setcreateNewCategory(true); setcreateNewElement(false) }
+    const createCategoryClick = () => { setcreateNewCategory(true); setcreateNewElement(false); setEdit(false); setDelete(false) }
     const [createNewElement, setcreateNewElement] = useState(false)
-    const createElementClick = () => { setcreateNewElement(true); setcreateNewCategory(false) }
+    const createElementClick = () => { setcreateNewElement(true); setcreateNewCategory(false); setEdit(false); setDelete(false) }
     const [edit, setEdit] = useState(false)
-    const editClick = () => { setEdit(true) }
-    const [del, setDelete] = useState(false)
-    const deleteClick = () => { setDelete(true) }
+    const editClick = () => { setEdit(true); setcreateNewElement(false); setcreateNewCategory(false); setDelete(false) }
+    const [deleteData, setDelete] = useState(false)
+    const deleteClick = () => { setDelete(true); setEdit(false); setcreateNewElement(false); setcreateNewCategory(false); }
 
     return (
         <div>
@@ -51,7 +53,9 @@ const CategoriesTable = ({ categories, elements }) => {
                 </div>
             </div>
             {createNewCategory? <CreateCategory /> : null}
-            {createNewElement? <CreateElement /> : null}
+            {createNewElement? <CreateElement /> : null} 
+            {edit? <EditElement categories={categories} elements={elements}/> : null}
+            {deleteData? <Delete categories={categories} elements={elements} /> : null}
         </div>
     );
 }
