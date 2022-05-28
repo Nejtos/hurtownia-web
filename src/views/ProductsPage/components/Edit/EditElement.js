@@ -7,11 +7,14 @@ const EditElement = ({categories, elements}) => {
 
     const [id_kategorii, setIDKategorii] = useState("")
     const [nazwa_kategorii, setNazwaKategorii] = useState("")
+    const [id, setBaseCatID] = useState("")
     const [id_elementu, setEditIDElementu] = useState("")
     const [nazwa_elementu, setEditNazwaElementu] = useState("")
+    const [base_id, setBaseElemID] = useState("")
 
     const handleCategoriesChange = () => {
         axios.post(`${baseApiUrl}/categories/edit`, {
+            id: id,
             id_kategorii: id_kategorii,
             nazwa_kategorii: nazwa_kategorii,
             })
@@ -25,6 +28,7 @@ const EditElement = ({categories, elements}) => {
 
     const handleElementsChange = () => {
         axios.post(`${baseApiUrl}/elements/edit`, {
+            id: base_id,
             id_elementu: id_elementu,
             nazwa_elementu: nazwa_elementu,
             })
@@ -50,10 +54,11 @@ const EditElement = ({categories, elements}) => {
                     <div className="CategoriesName">Kategoria</div>
                 </div>
                 {categories.map((category, key) => {
+                    console.log(category)
                     return <div className="CreateCategoryWrapper" key={key}>
                     <label className="CreateCategoryLabel">
-                        <input className="FirstBox"  name="id_kategorii" onChange={(e) => { setIDKategorii(e.target.value) }} placeholder={category.id_kategorii} />
-                        <input className="SecondBox" name="nazwa_kategorii" onChange={(e) => { setNazwaKategorii(e.target.value) }} placeholder={category.nazwa_kategorii} />  
+                        <input className="FirstBox"  name="id_kategorii" onChange={(e) => { setIDKategorii(e.target.value); setBaseCatID(category.id) }} placeholder={category.id_kategorii} />
+                        <input className="SecondBox" name="nazwa_kategorii" onChange={(e) => { setNazwaKategorii(e.target.value); setBaseCatID(category.id) }} placeholder={category.nazwa_kategorii} />  
                     </label>
                 </div>
                 })}
@@ -66,8 +71,8 @@ const EditElement = ({categories, elements}) => {
                 {elements.map((element, key) => {
                 return <div className="EditElementWrapper" key={key}>
                     <label className="EditElementLabel">
-                        <input className="FirstBox" name="id_elementu" onChange={(e) => { setEditIDElementu(e.target.value) }} placeholder={element.id_elementu}/>
-                        <input className="SecondBox" name="nazwa_elementu" onChange={(e) => { setEditNazwaElementu(e.target.value) }} placeholder={element.nazwa_elementu}/>
+                        <input className="FirstBox" name="id_elementu" onChange={(e) => { setEditIDElementu(e.target.value); setBaseElemID(element.id) }} placeholder={element.id_elementu}/>
+                        <input className="SecondBox" name="nazwa_elementu" onChange={(e) => { setEditNazwaElementu(e.target.value); setBaseElemID(element.id) }} placeholder={element.nazwa_elementu}/>
                     </label>
                 </div>
                 })}

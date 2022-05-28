@@ -1,4 +1,12 @@
-.DeliveriesPanelWrapper {
+.DetailTitle {
+    position: flex;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 380px;
+}
+
+.DetailsDeliveryPanelWrapper {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-y: scroll;
@@ -8,13 +16,33 @@
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
     margin: 0;
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
-.DeliveriesID{
+.DetailsDeliveryHeaderWrapper {
+    background-color: rgba(80, 110, 223, 0.1);
+    width: 1100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    display: inline-flex;
+    gap: 175px;
+}
+
+.DetailsDeliveryWrapper {
+    height: 54.55px;
+    width: 1098px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E4E7EF;
+}
+
+.DetailsDeliveryID{
     margin-left: 130px;
     height: 19px;
     color: #2F2F2F;
@@ -27,7 +55,7 @@
     gap: 250px;
 }
 
-.DeliveriesData{
+.DetailsDeliveryWeight{
     margin-left: 35px;
     height: 19px;
     color: #2F2F2F;
@@ -39,7 +67,7 @@
     max-width: 100px;
 }
 
-.DeliveriesDetails{
+.DetailsDeliveryDate{
     margin-left: 30px;
     height: 19px;
     color: #2F2F2F;
@@ -51,7 +79,7 @@
     max-width: 100px;
 }
 
-.DeliveriesStatus{
+.DetailsDeliveryBatchNumber{
     margin-left: 20px;
     height: 19px;
     color: #2F2F2F;
@@ -63,27 +91,7 @@
     max-width: 100px;
 }
 
-.DeliveriesHeaderWrapper {
-    background-color: rgba(80, 110, 223, 0.1);
-    width: 1100px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    display: inline-flex;
-    gap: 175px;
-}
-
-.DeliveryWrapper {
-    height: 54.55px;
-    width: 1098px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #E4E7EF;
-}
-
-.DeliveryID {
+.DetailDeliveryID {
     margin-left: 100px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -95,7 +103,7 @@
     text-overflow: ellipsis;
 }
 
-.DeliveryDate {
+.DetailDeliveryWeight {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
@@ -106,8 +114,7 @@
 }
 
 
-.DeliveryDetails {
-    cursor: pointer;
+.DetailDeliveryDate {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
@@ -115,10 +122,9 @@
     text-overflow: ellipsis;
     margin-left: 115px;
     max-width: 150px;
-    text-decoration: underline;
 }
 
-.DeliveryStatus {
+.DetailDeliveryBatchNumber {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
@@ -128,6 +134,30 @@
     max-width: 190px;
     text-align: center;
 }
+
+.GoBackBox{
+    display: flex;
+    flex-direction: row;
+    width: 128px;
+    margin-top: 140px;
+    margin-left: 375px;
+    cursor: pointer;
+  }
+  
+  .GoBack{
+    margin-left: 10px;
+    height: 27px;
+    width: 90px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: underline;
+  }
 
 ::-webkit-scrollbar {
     width: 10px;

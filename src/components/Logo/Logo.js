@@ -6,7 +6,7 @@ const Logo = () =>
 {
 	return (
 		<div className="LogoWrapper">
-			<img src={logo} alt="Hospital schedule logo" />
+			<img src={logo} alt="Main logo" />
 		</div>
 	);
 }

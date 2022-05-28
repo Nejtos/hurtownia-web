@@ -34,7 +34,7 @@
 }
 
 .ProductsID{
-    margin-left: 15px;
+    margin-left: 40px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -46,7 +46,7 @@
 }
 
 .ProductsCategory{
-    margin-left: 65px;
+    margin-left: 50px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -58,7 +58,7 @@
 }
 
 .ProductsElement{
-    margin-left: 70px;
+    margin-left: 65px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -106,7 +106,7 @@
 }
 
 .ProductsWeight{
-    margin-left: 70px;
+    margin-left: 55px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
