@@ -8,11 +8,12 @@
 }
 
 .StorageProductID {
-    margin-left: 185px;
+    margin-left: 122px;
+    margin-right: 120px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
@@ -20,20 +21,26 @@
 }
 
 .StoragePlaceID {
+    margin-left: 105px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 215px;
 }
 
 
 .StorageProductWeight {
+    margin-left: 180px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 125px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 95px;
+    text-overflow: ellipsis;   
 }

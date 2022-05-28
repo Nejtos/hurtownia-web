@@ -15,11 +15,13 @@ import { UserContext } from "./contexts/UserContext";
 import { useState, useEffect } from "react";
 
 function App() {
+    
     const [userState, setUserState] = useState({
         email: "",
         role: "",
         status: false,
     });
+
     //checking if user is auth after reloading page
     useEffect(() => {
         axiosInstance

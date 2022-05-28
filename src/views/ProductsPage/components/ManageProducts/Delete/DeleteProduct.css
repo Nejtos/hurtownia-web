@@ -47,7 +47,7 @@
 }
 
 .DeleteProductsElement{
-    margin-left: 40px;
+    margin-left: 37px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -59,7 +59,7 @@
 }
 
 .DeleteProductsProducent{
-    margin-left: 45px;
+    margin-left: 72px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -71,7 +71,7 @@
 }
 
 .DeleteProductsNumber{
-    margin-left: 60px;
+    margin-left: 80px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -83,7 +83,7 @@
 }
 
 .DeleteProductsDate{
-    margin-left: 50px;
+    margin-left: 48px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -95,7 +95,7 @@
 }
 
 .DeleteProductsWeight{
-    margin-left: 40px;
+    margin-left: 15px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -142,7 +142,7 @@
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     max-width: 50px;
     white-space: nowrap;
     overflow: hidden;
@@ -152,20 +152,24 @@
 .DeleteProductCategory {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 70px;
+    margin-left: 55px;
     max-width: 155px;
 }
 
 .DeleteProductElement {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 35px;
+    margin-left: 10px;
     max-width: 110px;
 }
 
@@ -173,39 +177,47 @@
 .DeleteProductProducent {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 40px;
-    max-width: 160px;
+    margin-left: 10px;
+    max-width: 235px;
 }
 
 .DeleteProductNumber {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 40px;
+    margin-left: 5px;
     max-width: 125px;
 }
 
 .DeleteProductDate {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 60px;
+    margin-left: 40px;
     max-width: 125px;
 }
 
 .DeleteProductWeight {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 85px;
-    max-width: 50px;
+    margin-left: 40px;
+    max-width: 75px;
 }

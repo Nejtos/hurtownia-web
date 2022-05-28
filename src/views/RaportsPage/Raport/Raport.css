@@ -31,6 +31,7 @@
 
 
 .RaportDetails {
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     white-space: nowrap;
@@ -38,4 +39,5 @@
     text-overflow: ellipsis;
     margin-left: 180px;
     max-width: 150px;
+    text-decoration: underline;
 }

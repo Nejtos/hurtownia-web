@@ -90,6 +90,61 @@
     gap: 175px;
 }
 
+.OrderWrapper {
+    height: 54.55px;
+    width: 1098px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E4E7EF;
+}
+
+.OrderID {
+    margin-left: 100px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.OrderDate {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 85px;
+    max-width: 150px;
+}
+
+
+.OrderDetails {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 115px;
+    max-width: 150px;
+    text-decoration: underline;
+}
+
+.OrderStatus {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 70px;
+    max-width: 190px;
+    text-align: center;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

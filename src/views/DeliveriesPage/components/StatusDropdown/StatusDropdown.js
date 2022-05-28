@@ -4,7 +4,7 @@ import { baseApiUrl } from "../../../../services/routes";
 
 const StatusDropdown = ({ status, id }) => {   
     const handleChange = (e) => {
-        axios.post(`${baseApiUrl}/deliveries/update`,{id_dostawy: id, status: e.target.value})
+        axios.post(`${baseApiUrl}/deliveries/update`,{ id: id, status: e.target.value})
         .catch((error) =>
         {
             console.log(error.response.data);

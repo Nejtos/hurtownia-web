@@ -78,6 +78,50 @@
     gap: 175px;
 }
 
+.RaportWrapper {
+    height: 54.55px;
+    width: 1098px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #E4E7EF;
+}
+
+.RaportID {
+    margin-left: 145px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.RaportDate {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 205px;
+    max-width: 150px;
+}
+
+
+.RaportDetails {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 180px;
+    max-width: 150px;
+    text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

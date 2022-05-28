@@ -8,34 +8,38 @@
 }
 
 .EmployeeName {
-    margin-left: 130px;
+    margin-left: 90px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
-    justify-content: left;
-    max-width: 150px;
+    justify-content: center;
+    max-width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .EmployeePosition {
+    margin-left: 160px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 220px;
-    max-width: 150px;
+    max-width: 180px;
 }
 
 
 .EmployeeTelNum {
+    margin-left: 185px;
+    max-width: 150px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 205px;
-    max-width: 150px;
 }

@@ -44,7 +44,7 @@
 }
 
 .StoragePlace{
-    margin-left: 100px;
+    margin-left: 35px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -52,11 +52,11 @@
     font-weight: bold;
     letter-spacing: 0;
     line-height: 19px;
-    max-width: 100px;
+    max-width: 250px;
 }
 
 .StorageWeight{
-    margin-left: 70px;
+    margin-left: 0px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;

@@ -24,7 +24,7 @@ const DeliveriesPanel = ({ deliveries }) => {
                     <div className="DeliveriesID">ID</div>
                     <div className="DeliveriesData">Data</div>
                     <div className="DeliveriesDetails">Szczegóły</div>
-                    <div className="DeliveriesStatus">Dostarczona</div>
+                    <div className="DeliveriesStatus">Dostarczono</div>
                 </div>
                 {deliveries.map((delivery, key) => {
                     return <div className="DeliveryWrapper" key={key}>

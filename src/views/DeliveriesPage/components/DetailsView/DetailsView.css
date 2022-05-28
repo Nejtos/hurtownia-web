@@ -6,7 +6,31 @@
     margin-left: 380px;
 }
 
-.DetailsDeliveryPanelWrapper {
+.GoBackBox{
+    display: flex;
+    flex-direction: row;
+    width: 128px;
+    margin-top: 140px;
+    margin-left: 375px;
+    cursor: pointer;
+}
+  
+.GoBack{
+    margin-left: 10px;
+    height: 27px;
+    width: 90px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.DetailsPanelWrapper {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-y: scroll;
@@ -22,7 +46,7 @@
     transform: translate(-50%, -50%);
 }
 
-.DetailsDeliveryHeaderWrapper {
+.DetailsHeaderWrapper {
     background-color: rgba(80, 110, 223, 0.1);
     width: 1100px;
     height: 50px;
@@ -33,7 +57,7 @@
     gap: 175px;
 }
 
-.DetailsDeliveryWrapper {
+.DetailsWrapper {
     height: 54.55px;
     width: 1098px;
     display: flex;
@@ -43,7 +67,7 @@
 }
 
 .DetailsDeliveryID{
-    margin-left: 130px;
+    margin-left: 120px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -76,11 +100,11 @@
     font-weight: bold;
     letter-spacing: 0;
     line-height: 19px;
-    max-width: 100px;
+    max-width: 160px;
 }
 
 .DetailsDeliveryBatchNumber{
-    margin-left: 20px;
+    margin-left: 0px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -92,11 +116,11 @@
 }
 
 .DetailDeliveryID {
-    margin-left: 100px;
+    margin-left: 55px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
@@ -106,10 +130,12 @@
 .DetailDeliveryWeight {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 85px;
+    margin-left: 105px;
     max-width: 150px;
 }
 
@@ -117,47 +143,261 @@
 .DetailDeliveryDate {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 115px;
+    margin-left: 150px;
     max-width: 150px;
 }
 
 .DetailDeliveryBatchNumber {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 85px;
+    margin-left: 100px;
     max-width: 190px;
     text-align: center;
 }
 
-.GoBackBox{
-    display: flex;
-    flex-direction: row;
-    width: 128px;
-    margin-top: 140px;
-    margin-left: 375px;
-    cursor: pointer;
-  }
-  
-  .GoBack{
-    margin-left: 10px;
-    height: 27px;
-    width: 90px;
-    color: black;
+.DetailsOrderID{
+    margin-left: 120px;
+    height: 19px;
+    color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: bold;
     letter-spacing: 0;
-    line-height: 27px;
-    vertical-align: middle;
+    line-height: 19px;
+    max-width: 100px;
+    gap: 250px;
+}
+
+.DetailsOrderCategory{
+    margin-left: 35px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 100px;
+}
+
+.DetailsOrderElement{
+    margin-left: 30px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 160px;
+}
+
+.DetailsOrderWeight{
+    margin-left: 20px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 100px;
+}
+
+.DetailOrderID {
+    margin-left: 55px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.DetailOrderCategory {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 110px;
+    max-width: 150px;
+}
+
+
+.DetailOrderElement {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 125px;
+    max-width: 150px;
+}
+
+.DetailOrderWeight {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 120px;
+    max-width: 110px;
     text-align: center;
-    text-decoration: underline;
-  }
+}
+
+.DetailsRaportHeaderWrapper {
+    background-color: rgba(80, 110, 223, 0.1);
+    width: 1100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    display: inline-flex;
+    gap: 50px;
+}
+
+.DetailsRaportID{
+    margin-left: 80px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 50px;
+    gap: 250px;
+}
+
+.DetailsRaportWeight{
+    margin-left: 15px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 90px;
+}
+
+.DetailsRaportDate{
+    margin-left: 15px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 150px;
+}
+
+.DetailsRaportBatchNumber{
+    margin-left: 15px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 80px;
+}
+
+.DetailsRaportDescription{
+    margin-left: 205px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 50px;
+}
+
+.DetailRaportID{
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.DetailRaportWeight {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    max-width: 90px;
+}
+
+
+.DetailRaportDate {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 35px;
+    max-width: 150px;
+}
+
+.DetailRaportBatchNumber {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 35px;
+    max-width: 110px;
+    text-align: center;
+}
+
+.DetailRaportDescription {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 10px;
+    max-width: 480px;
+    text-align: center;
+}
 
 ::-webkit-scrollbar {
     width: 10px;

@@ -70,7 +70,7 @@
 }
 
 .ProductsProducent{
-    margin-left: 70px;
+    margin-left: 85px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -82,7 +82,7 @@
 }
 
 .ProductsNumber{
-    margin-left: 70px;
+    margin-left: 95px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -94,7 +94,7 @@
 }
 
 .ProductsDate{
-    margin-left: 70px;
+    margin-left: 60px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -106,7 +106,7 @@
 }
 
 .ProductsWeight{
-    margin-left: 55px;
+    margin-left: 35px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
