@@ -3,11 +3,11 @@
     overflow-y: scroll;
     position: absolute;
     height: 250px;
-    width: 500px;
+    width: 600px;
     background-color: #FFFFFF;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.5);
     margin-top: 290px;
-    margin-left: 675px;
+    margin-left: 625px;
 }
 
 .CreateRaportAcceptExteriorButtonBox{
@@ -62,6 +62,7 @@
     max-width: 460px;
     display: inline-flex;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .CreateRaportInput{
@@ -88,4 +89,20 @@
     background-color: #FFFFFF;
     margin-left: 10px;
     margin-right: 5px;
+}
+
+.SecondRow{
+    display: inline-block;
+}
+
+.removeButton{
+    background: linear-gradient(135deg, #cc37d3 0%, #c02645 100%);
+    border-radius: 8px;
+}
+
+.addButton{
+    margin-left: 5px;
+    
+    background: linear-gradient(135deg, #34a078 0%, #37B9C6 100%);
+    border-radius: 8px;
 }
