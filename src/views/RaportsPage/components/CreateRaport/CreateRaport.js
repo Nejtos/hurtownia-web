@@ -7,10 +7,13 @@ const CreateRaport = () => {
 
     const [id_raportu, setIDRaportu] = useState("")
     const [inputList, setInputList] = useState([{ id_produktu: "", opis: "" }]);
-
+    const moment = require('moment');
+    var date = moment().format('YYYY-MM-DD');
+    
     const handleChange = () => {
-        axios.post(`${baseApiUrl}/raportsrows/create`, {
+        axios.post(`${baseApiUrl}/raports/create`, {
             id_raportu: id_raportu,
+            data: date,
             inputList: inputList,
             })
             .then(() => {

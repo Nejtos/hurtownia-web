@@ -4,7 +4,7 @@ import arrow from "../../../../icons/arrow.svg"
 // import { baseApiUrl } from "../../../../services/routes";
 // import { useState, useEffect } from "react";
 
-const DetailsView = ({ deliveryID }) => {
+const DetailsView = ({ orderID }) => {
 
     // const [reportsRows, setReportsRows] = useState([])
 
@@ -16,35 +16,36 @@ const DetailsView = ({ deliveryID }) => {
     //     });
     // },[baseID])
 
+
     const handleClick = () => {
         window.location.reload(false);
     }
 
     return (
         <div>
-
             <div className="GoBackBox" onClick={handleClick} >
                 <img src={arrow} alt="Left arrow" />
                 <div className="GoBack">powrót</div>
             </div>
             <div className="DetailTitle" >
-                Dostawa {deliveryID}
+                Zamówienie {orderID}
             </div>
-            <div className="DetailsDeliveryPanelWrapper" >
-                <div className="DetailsDeliveryHeaderWrapper">
-                    <div className="DetailsDeliveryID">ID</div>
-                    <div className="DetailsDeliveryWeight">Ilość [kg] </div>
-                    <div className="DetailsDeliveryDate">Data ważności</div>
-                    <div className="DetailsDeliveryBatchNumber">Nr partii</div>
+            <div className="DetailsOrderPanelWrapper" >
+                <div className="DetailsOrderHeaderWrapper">
+                    <div className="DetailsOrderID">ID</div>
+                    <div className="DetailsOrderCategory">Kategoria </div>
+                    <div className="DetailsOrderElement">Element</div>
+                    <div className="DetailsOrderWeight">Ilość</div>
                 </div>
-                <div className="DetailsDeliveryWrapper">
-                    <span className="DetailDeliveryID">A</span>
-                    <span className="DetailDeliveryWeight">B</span>
-                    <span className="DetailDeliveryDate" >C</span>
-                    <span className="DetailDeliveryBatchNumber"> D </span>
+                <div className="DetailsOrderWrapper">
+                    <span className="DetailOrderID">A</span>
+                    <span className="DetailOrderCategory">B</span>
+                    <span className="DetailOrderElement" >C</span>
+                    <span className="DetailOrderWeight"> D </span>
                 </div>
             </div>
         </div>
+
     );
 }
 

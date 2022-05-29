@@ -1,6 +1,6 @@
 import "./OrdersPanel.css"
 import StatusDropdown from "../StatusDropdown/StatusDropdown";
-import DetailsView from "../../DeliveriesPage/components/DetailsView/DetailsView";
+import DetailsView from "../components/DetailsView/DetailsView";
 import { UserContext } from "../../../contexts/UserContext";
 import { useState, useContext } from 'react';
 

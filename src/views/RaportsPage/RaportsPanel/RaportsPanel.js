@@ -1,5 +1,5 @@
 import "./RaportsPanel.css"
-import DetailsView from "../../DeliveriesPage/components/DetailsView/DetailsView";
+import DetailsView from "../components/DetailsView/DetailsView";
 import { UserContext } from "../../../contexts/UserContext";
 import { useState, useContext } from 'react';
 
@@ -8,8 +8,9 @@ const RaportsPanel = ({ raports }) => {
     const { userState } = useContext(UserContext);
     const [showDetails, setShowDetails] = useState(false);
     const [ID, setRaportID] = useState("");
+    const [baseID, setBaseID] = useState("");
 
-    const detailsClick = (ID) => {
+    const detailsClick = (ID, baseID) => {
         let panel = document.querySelector('.RaportsPanelWrapper');
         panel.style.display = "none";
         if (userState.role === "kontroler jakosci") {
@@ -17,7 +18,8 @@ const RaportsPanel = ({ raports }) => {
             button.style.display = "none";
         }
         setShowDetails(true);
-        setRaportID(ID)
+        setRaportID(ID);
+        setBaseID(baseID);
     }
 
     return (
@@ -34,7 +36,7 @@ const RaportsPanel = ({ raports }) => {
                             return <div className="RaportWrapper" key={key} >
                                 <span className="RaportID">{raport.id_raportu}</span>
                                 <span className="RaportDate">{raport.data}</span>
-                                <span className="RaportDetails" onClick={() => detailsClick(raport.id_raportu)} > Szczegóły </span>
+                                <span className="RaportDetails" onClick={() => detailsClick(raport.id_raportu, raport.id)} > Szczegóły </span>
                                 {/* <Raport key={key} raportID={raport.id_raportu} raportDate={raport.data} /> */}
                             </div>
                         })}
@@ -51,14 +53,14 @@ const RaportsPanel = ({ raports }) => {
                             return <div className="RaportWrapper" key={key} >
                                 <span className="RaportID">{raport.id_raportu}</span>
                                 <span className="RaportDate">{raport.data}</span>
-                                <span className="RaportDetails" onClick={() => detailsClick(raport.id_raportu)} > Szczegóły </span>
+                                <span className="RaportDetails" onClick={() => detailsClick(raport.id_raportu, raport.id)} > Szczegóły </span>
                                 {/* <Raport key={key} raportID={raport.id_raportu} raportDate={raport.data} /> */}
                             </div>
                         })}
                     </div>
                 </div>
             }
-            {showDetails ? <DetailsView marker={"raport"} raportID={ID} /> : null}
+            {showDetails ? <DetailsView raportID={ID} baseID={baseID} /> : null}
         </div>
     );
 }

@@ -11,9 +11,9 @@
     display: flex;
     height: 28px;
     width: 265px;
-    border-radius: 12px;
-    background-color: #969393;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background: linear-gradient(180deg, #105a3f 0%, #87b331d9 100%);
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
     margin-bottom: 65px;
     justify-content: center;
     align-items: center;

@@ -30,7 +30,7 @@
     text-decoration: underline;
 }
 
-.DetailsDeliveryPanelWrapper {
+.DetailsOrderPanelWrapper {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-y: scroll;
@@ -46,7 +46,7 @@
     transform: translate(-50%, -50%);
 }
 
-.DetailsDeliveryHeaderWrapper {
+.DetailsOrderHeaderWrapper {
     background-color: rgba(80, 110, 223, 0.1);
     width: 1100px;
     height: 50px;
@@ -57,7 +57,7 @@
     gap: 175px;
 }
 
-.DetailsDeliveryWrapper {
+.DetailsOrderWrapper {
     height: 54.55px;
     width: 1098px;
     display: flex;
@@ -66,7 +66,7 @@
     border: 1px solid #E4E7EF;
 }
 
-.DetailsDeliveryID{
+.DetailsOrderID{
     margin-left: 120px;
     height: 19px;
     color: #2F2F2F;
@@ -79,7 +79,7 @@
     gap: 250px;
 }
 
-.DetailsDeliveryWeight{
+.DetailsOrderCategory{
     margin-left: 35px;
     height: 19px;
     color: #2F2F2F;
@@ -91,7 +91,7 @@
     max-width: 100px;
 }
 
-.DetailsDeliveryDate{
+.DetailsOrderElement{
     margin-left: 30px;
     height: 19px;
     color: #2F2F2F;
@@ -103,8 +103,8 @@
     max-width: 160px;
 }
 
-.DetailsDeliveryBatchNumber{
-    margin-left: 0px;
+.DetailsOrderWeight{
+    margin-left: 20px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -115,7 +115,7 @@
     max-width: 100px;
 }
 
-.DetailDeliveryID {
+.DetailOrderID {
     margin-left: 55px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
@@ -127,7 +127,7 @@
     text-overflow: ellipsis;
 }
 
-.DetailDeliveryWeight {
+.DetailOrderCategory {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -135,12 +135,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 105px;
+    margin-left: 110px;
     max-width: 150px;
 }
 
 
-.DetailDeliveryDate {
+.DetailOrderElement {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -148,11 +148,11 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 150px;
+    margin-left: 125px;
     max-width: 150px;
 }
 
-.DetailDeliveryBatchNumber {
+.DetailOrderWeight {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -160,8 +160,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 100px;
-    max-width: 190px;
+    margin-left: 120px;
+    max-width: 110px;
     text-align: center;
 }
 

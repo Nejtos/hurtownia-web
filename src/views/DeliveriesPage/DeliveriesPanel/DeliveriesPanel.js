@@ -35,7 +35,7 @@ const DeliveriesPanel = ({ deliveries }) => {
                     </div>
                 })}
             </div>
-            {showDetails ? <DetailsView marker={"dostawa"} deliveryID={ID} /> : null}
+            {showDetails ? <DetailsView deliveryID={ID} /> : null}
         </div>
     );
 }

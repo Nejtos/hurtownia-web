@@ -30,7 +30,7 @@
     text-decoration: underline;
 }
 
-.DetailsDeliveryPanelWrapper {
+.DetailsRaportPanelWrapper {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow-y: scroll;
@@ -46,18 +46,7 @@
     transform: translate(-50%, -50%);
 }
 
-.DetailsDeliveryHeaderWrapper {
-    background-color: rgba(80, 110, 223, 0.1);
-    width: 1100px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    display: inline-flex;
-    gap: 175px;
-}
-
-.DetailsDeliveryWrapper {
+.DetailsRaportWrapper {
     height: 54.55px;
     width: 1098px;
     display: flex;
@@ -66,8 +55,19 @@
     border: 1px solid #E4E7EF;
 }
 
-.DetailsDeliveryID{
-    margin-left: 120px;
+.DetailsRaportHeaderWrapper {
+    background-color: rgba(80, 110, 223, 0.1);
+    width: 1100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    display: inline-flex;
+    gap: 50px;
+}
+
+.DetailsRaportID{
+    margin-left: 80px;
     height: 19px;
     color: #2F2F2F;
     font-family: 'Montserrat', sans-serif;
@@ -75,72 +75,96 @@
     font-weight: bold;
     letter-spacing: 0;
     line-height: 19px;
-    max-width: 100px;
+    max-width: 50px;
     gap: 250px;
 }
 
-.DetailsDeliveryWeight{
+.DetailsRaportWeight{
+    margin-left: 15px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 90px;
+}
+
+.DetailsRaportDate{
+    margin-left: 15px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 150px;
+}
+
+.DetailsRaportBatchNumber{
+    margin-left: 15px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 80px;
+}
+
+.DetailsRaportDescription{
+    margin-left: 205px;
+    height: 19px;
+    color: #2F2F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 19px;
+    max-width: 50px;
+}
+
+.DetailRaportID{
+    margin-left: 25px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.DetailRaportWeight {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 5px;
+    max-width: 90px;
+}
+
+
+.DetailRaportDate {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-left: 35px;
-    height: 19px;
-    color: #2F2F2F;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 19px;
-    max-width: 100px;
-}
-
-.DetailsDeliveryDate{
-    margin-left: 30px;
-    height: 19px;
-    color: #2F2F2F;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 19px;
-    max-width: 160px;
-}
-
-.DetailsDeliveryBatchNumber{
-    margin-left: 0px;
-    height: 19px;
-    color: #2F2F2F;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 0;
-    line-height: 19px;
-    max-width: 100px;
-}
-
-.DetailDeliveryID {
-    margin-left: 55px;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    max-width: 150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.DetailDeliveryWeight {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 105px;
     max-width: 150px;
 }
 
-
-.DetailDeliveryDate {
+.DetailRaportBatchNumber {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -148,11 +172,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 150px;
-    max-width: 150px;
+    margin-left: 35px;
+    max-width: 110px;
+    text-align: center;
 }
 
-.DetailDeliveryBatchNumber {
+.DetailRaportDescription {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
@@ -160,8 +185,8 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 100px;
-    max-width: 190px;
+    margin-left: 10px;
+    max-width: 480px;
     text-align: center;
 }
 

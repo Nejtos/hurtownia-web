@@ -35,8 +35,8 @@ const RaportsPage= () =>
             {(userState.role === "kontroler jakosci")
             ?<div>
             <div className="AddRaportButton">
-                <button className="AnotherExteriorButtonBox">
-                    <div className="AnotherButtonBox" onClick={createRaportClick}>
+                <button className="RaportsPageExteriorButtonBox">
+                    <div className="RaportsPageButtonBox" onClick={createRaportClick}>
                         <label> {"Dodaj raport"} </label>
                      </div>
                 </button>

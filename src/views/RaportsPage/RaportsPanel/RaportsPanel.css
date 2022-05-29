@@ -88,11 +88,11 @@
 }
 
 .RaportID {
-    margin-left: 145px;
+    margin-left: 115px;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     max-width: 150px;
     white-space: nowrap;
     overflow: hidden;
@@ -102,6 +102,8 @@
 .RaportDate {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -114,10 +116,12 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    display: flex;
+    justify-content: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left: 180px;
+    margin-left: 175px;
     max-width: 150px;
     text-decoration: underline;
 }
