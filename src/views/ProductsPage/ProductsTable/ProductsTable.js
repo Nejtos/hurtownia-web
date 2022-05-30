@@ -56,9 +56,9 @@ const ProductsTable = ({ products }) => {
                 </div>
                 : <div>
                     <div className="RowProductsButtons">
-                        <button className="ProductsButton" onClick={handleOnClick} > Dodaj produkt </button>
-                        <button className="ProductsButton" onClick={handleOnClickEdit}> Edytuj </button>
-                        <button className="ProductsButton" onClick={handleOnClickDel}> Usuń </button>
+                        <button className="ProductsAddButton" onClick={handleOnClick} > Dodaj produkt </button>
+                        <button className="ProductsEditButton" onClick={handleOnClickEdit}> Edytuj </button>
+                        <button className="ProductsDeleteButton" onClick={handleOnClickDel}> Usuń </button>
                     </div>
                     <div className="ProductsPanelWrapper" type="default">
                         <div className="ProductsHeaderWrapper">

@@ -34,7 +34,7 @@ const StoragePage = () => {
             {(userState.role === "magazynier")
                 ?<div>
                     <div className="PositionAddButton">
-                        <button className="AddProductButton" onClick={addProductClick} > Odłóż produkt </button>
+                        <button className="ProductsAddButton" onClick={addProductClick} > Odłóż produkt </button>
                     </div>
                     {addProduct ? <AddProduct /> : <StoragePanel items={items} />}
                 </div>

@@ -1,20 +1,18 @@
 import "./DetailsView.css"
 import arrow from "../../../../icons/arrow.svg"
-// import axios from "axios";
-// import { baseApiUrl } from "../../../../services/routes";
-// import { useState, useEffect } from "react";
+import axios from "axios";
+import { baseApiUrl } from "../../../../services/routes";
+import { useState, useEffect } from "react";
 
 const DetailsView = ({ deliveryID }) => {
 
-    // const [reportsRows, setReportsRows] = useState([])
+    const [deliveriesRows, setDeliveriesRows] = useState([])
 
-    // useEffect(() =>
-    // {
-    //     axios.get(`${baseApiUrl}/raportsrows/${baseID}`).then((response) =>
-    //     {
-    //         setReportsRows(response.data);
-    //     });
-    // },[baseID])
+    useEffect(() => {
+        axios.get(`${baseApiUrl}/deliveriesrows/${deliveryID}`).then((response) => {
+            setDeliveriesRows(response.data);
+        });
+    }, [deliveryID])
 
     const handleClick = () => {
         window.location.reload(false);
@@ -22,7 +20,6 @@ const DetailsView = ({ deliveryID }) => {
 
     return (
         <div>
-
             <div className="GoBackBox" onClick={handleClick} >
                 <img src={arrow} alt="Left arrow" />
                 <div className="GoBack">powrót</div>
@@ -33,16 +30,18 @@ const DetailsView = ({ deliveryID }) => {
             <div className="DetailsDeliveryPanelWrapper" >
                 <div className="DetailsDeliveryHeaderWrapper">
                     <div className="DetailsDeliveryID">ID</div>
-                    <div className="DetailsDeliveryWeight">Ilość [kg] </div>
+                    <div className="DetailsDeliveryWeight">Ilość [kg]</div>
                     <div className="DetailsDeliveryDate">Data ważności</div>
                     <div className="DetailsDeliveryBatchNumber">Nr partii</div>
                 </div>
-                <div className="DetailsDeliveryWrapper">
-                    <span className="DetailDeliveryID">A</span>
-                    <span className="DetailDeliveryWeight">B</span>
-                    <span className="DetailDeliveryDate" >C</span>
-                    <span className="DetailDeliveryBatchNumber"> D </span>
-                </div>
+                {deliveriesRows.map((row, key) => {
+                    return <div className="DetailsDeliveryWrapper" key={key} >
+                        <span className="DetailDeliveryID"> {row.id_produktu} </span>
+                        <span className="DetailDeliveryWeight"> {row.ilosc} </span>
+                        <span className="DetailDeliveryDate" > {row.data_waznosci} </span>
+                        <span className="DetailDeliveryBatchNumber"> {row.nr_partii} </span>
+                    </div>
+                })}
             </div>
         </div>
     );

@@ -6,19 +6,19 @@ import { useState, useEffect } from "react";
 
 const DetailsView = ({ raportID, baseID }) => {
 
-    const [reportsRows, setReportsRows] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         axios.get(`${baseApiUrl}/raportsrows/${baseID}`).then((response) => {
-            setReportsRows(response.data);
+            setData(response.data);
         });
     }, [baseID])
-
-    console.log(reportsRows);
 
     const handleClick = () => {
         window.location.reload(false);
     }
+
+    console.log(data);
 
     return (
         <div>
@@ -37,13 +37,13 @@ const DetailsView = ({ raportID, baseID }) => {
                     <div className="DetailsRaportBatchNumber">Nr partii</div>
                     <div className="DetailsRaportDescription">Opis</div>
                 </div>
-                {reportsRows.map((row, key) => {
-                    return <div className="DetailsRaportWrapper" key={key} >
-                        <span className="DetailRaportID">{row.id_produktu}</span>
-                        <span className="DetailRaportWeight">B</span>
-                        <span className="DetailRaportDate" >C</span>
-                        <span className="DetailRaportBatchNumber"> D </span>
-                        <span className="DetailRaportDescription"> {row.opis} </span>
+                {data.map((e, key) => {
+                    return <div className="DetailsRaportWrapper" key={key}>
+                        <span className="DetailRaportID">{e.id_produktu}</span>
+                        <span className="DetailRaportWeight">{e.ilosc}</span>
+                        <span className="DetailRaportDate" >{e.data_waznosci}</span>
+                        <span className="DetailRaportBatchNumber">{e.nr_partii}</span>
+                        <span className="DetailRaportDescription"> {e.opis} </span>
                     </div>
                 })}
             </div>

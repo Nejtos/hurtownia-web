@@ -1,20 +1,20 @@
 import "./DetailsView.css"
 import arrow from "../../../../icons/arrow.svg"
-// import axios from "axios";
-// import { baseApiUrl } from "../../../../services/routes";
-// import { useState, useEffect } from "react";
+import axios from "axios";
+import { baseApiUrl } from "../../../../services/routes";
+import { useState, useEffect } from "react";
 
 const DetailsView = ({ orderID }) => {
 
-    // const [reportsRows, setReportsRows] = useState([])
+    const [ordersRows, setOrdersRows] = useState([])
 
-    // useEffect(() =>
-    // {
-    //     axios.get(`${baseApiUrl}/raportsrows/${baseID}`).then((response) =>
-    //     {
-    //         setReportsRows(response.data);
-    //     });
-    // },[baseID])
+    useEffect(() =>
+    {
+        axios.get(`${baseApiUrl}/ordersrows/${orderID}`).then((response) =>
+        {
+            setOrdersRows(response.data);
+        });
+    },[orderID])
 
 
     const handleClick = () => {
@@ -37,12 +37,14 @@ const DetailsView = ({ orderID }) => {
                     <div className="DetailsOrderElement">Element</div>
                     <div className="DetailsOrderWeight">Ilość</div>
                 </div>
-                <div className="DetailsOrderWrapper">
-                    <span className="DetailOrderID">A</span>
-                    <span className="DetailOrderCategory">B</span>
-                    <span className="DetailOrderElement" >C</span>
-                    <span className="DetailOrderWeight"> D </span>
+                {ordersRows.map((row, key) => {
+                    return <div className="DetailsOrderWrapper" key={key} >
+                    <span className="DetailOrderID"> {row.id_produktu} </span>
+                    <span className="DetailOrderCategory"> {row.kategoria} </span>
+                    <span className="DetailOrderElement" > {row.element} </span>
+                    <span className="DetailOrderWeight"> {row.ilosc} </span>
                 </div>
+                })}
             </div>
         </div>
 

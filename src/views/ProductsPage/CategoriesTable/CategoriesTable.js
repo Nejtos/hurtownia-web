@@ -23,10 +23,10 @@ const CategoriesTable = ({ categories, elements }) => {
     return (
         <div>
             <div className="RowCategoryButtons">
-                <button className="ProductsButton" onClick={createCategoryClick} > Dodaj kategorie </button>
-                <button className="ProductsButton" onClick={createElementClick}> Dodaj element </button>
-                <button className="ProductsButton" onClick={editClick}> Edytuj </button>
-                <button className="ProductsButton" onClick={deleteClick}> Usuń </button>
+                <button className="ProductsAddButton" onClick={createCategoryClick} > Dodaj kategorie </button>
+                <button className="ProductsAddButton" onClick={createElementClick}> Dodaj element </button>
+                <button className="ProductsEditButton" onClick={editClick}> Edytuj </button>
+                <button className="ProductsDeleteButton" onClick={deleteClick}> Usuń </button>
                 {/* <Button buttonContent="Dodaj kategorie" onClick={CreateClick}/>
                 <Button buttonContent="Dodaj element" />
                 <Button buttonContent="Edytuj" />
